@@ -1,0 +1,17 @@
+.loader {
+  width: var(--width-mini-icon);
+  height: var(--height-mini-icon);
+  border-bottom: calc(1px + (3 - 1) * (100vw - 1209px) / (1920 - 1209)) solid
+    rgba(52, 46, 103, 1);
+  border-radius: 50%;
+  animation: loader 1.5s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
