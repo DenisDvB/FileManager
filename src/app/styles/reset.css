@@ -4,18 +4,32 @@
   border: 0;
 }
 
-*,*:before,*:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {outline: none}
-a:focus, a:active {outline: none}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
 
-nav, footer, header, aside {display: block}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -26,15 +40,58 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {font-family: inherit}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
 
-input::-ms-clear {display: none}
-button {cursor: pointer}
-button::-moz-focus-inner {padding: 0; border: 0}
-a, a:visited {text-decoration: none}
-a:hover {text-decoration: none}
-ul li {list-style: none}
-img {vertical-align: top}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
 
-h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
 
+::-webkit-scrollbar {
+  width: calc(5px + (8 - 5) * (100vw - 1209px) / (1920 - 400));
+  height: calc(5px + (8 - 5) * (100vw - 1209px) / (1920 - 400));
+  margin-right: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-default);
+  -webkit-border-radius: var(--radius-m);
+  border-radius: var(--radius-m);
+}
+::-webkit-scrollbar-track {
+  background: rgba(61, 61, 61, 0.8);
+  -webkit-border-radius: var(--radius-m);
+  border-radius: var(--radius-m);
+}

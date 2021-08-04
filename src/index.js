@@ -6,10 +6,9 @@ import reportWebVitals from './reportWebVitals';
 // style
 import './index.css';
 // app
-import { App } from  './app/index';
+import { App } from './app/index';
 // store
 import { store } from './app/init/store';
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
